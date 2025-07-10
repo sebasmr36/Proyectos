@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   margin: 20px;
+   margin-bottom: 20px;
+   background-color: rgb(0, 0, 0); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #eaff02;
+    font-size: 2.5rem;
+    margin: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    width: auto;
+    height: auto;
+    border: #222 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+main {
+    width: 1200px;
+    height: 1000px;
+    background-color: antiquewhite;
+    border: 2px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-image: url('imagenes/pokemon-3840x2160.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas */
+    grid-template-rows: repeat(2, 1fr);    /* 2 filas fijas */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+}
+#pokemon1{
+    background-image: url('imagenes/pokemon\ 1\ .jpeg');
+    background-size: contain;
+    background-position: center;
+}
+#pokemon2{
+    background-image: url('imagenes/pokemon\ 2.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+#pokemon3{
+    background-image: url('imagenes/pokemon\ 3.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+#pokemon4{
+    background-image: url('imagenes/pokemon\ 4.jpeg');
+    background-size: contain;
+    background-position: center;        
+}
+
+#pokemon5{
+    background-image: url('imagenes/pokemon\ 5.jpeg');
+    background-size: contain;
+    background-position: center;
+}       
+#pokemon6{
+    background-image: url('imagenes/pokemon\ 6.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+section > div {
+    background: #ffffff;
+    border: 4px solid #e6b800; 
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 1.5px 0 #222 inset;
+    padding: 16px 12px;
+    margin: 0;
+    width: 220px;
+    min-height: 320px;
+    font-family: 'Arial Black', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+section > div h1 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 #fff, 2px 2px 2px #e6b800;
+}
+
+section > div:hover {
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+}
+

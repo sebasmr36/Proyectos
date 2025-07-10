@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="formulario">
+        <header>
+            <nav>
+                <a href="index.html">Volver al inicio</a>
+            </nav>
+        </header>
+       
+        <br>
+        <section>
+            <form action="" method="post">
+
+                <label for="tipo">Tipo de documento:</label>
+
+                    <select name="tipo" required>
+                        <option value="cc">Cédula de ciudadanía</option>
+                        <option value="ti">Tarjeta de identidad</option>
+                        <option value="ce">Cédula de extranjería</option>
+                        <option value="pasaporte">Pasaporte</option>
+                        <option value="nit">NIT</option>
+                    </select>
+                    
+                    <br><br>
+
+                        <label for="documento">Documento</label>
+                        <br>
+                        <input type="tel" pattern="[0-9]" name="documento" placeholder="Escribe tu documento" required>
+                        
+                        <br><br>
+
+                        <label for="nombre">Nombre:</label>
+                        <br>
+                        <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+                        <br><br>
+
+                        <label for="email">Correo electrónico:</label>
+                        <br>
+                        <input type="email" name="email" placeholder="ejemplo@correo.com" required>
+                        <br><br>
+
+                        <label for="celular">Celular:</label>
+                        <br>
+                        <input type="tel" name="celular" placeholder="1234567890" required>
+                        <br><br>
+
+                        <label for="direccion">Dirección:</label>
+                        <br>
+                        <input type="address" name="direccion" placeholder="ej: Calle 123 # 45 - 67" required>
+                        <br><br>
+
+                        <label for="presentacion">Presentación:</label>
+                        <br><br>
+                        
+                        <textarea name="presentacion" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <br><br>
+
+                        <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <br>
+        <br>
+        <footer>
+            <p>&copy; 2025 Darwin Morales. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

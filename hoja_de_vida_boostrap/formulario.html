@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="formulario" class="container d-flex align-items-center justify-content-center min-vh-100">
+        <div class="w-100 bg-white rounded shadow border p-4" style="max-width: 500px;">
+            <header class="mb-4">
+                <nav>
+                    <a href="index.html" class="btn btn-secondary">Volver al inicio</a>
+                </nav>
+            </header>
+            <section>
+                <form action="" method="post">
+                <div class="mb-3">
+                    <label for="tipo" class="form-label">Tipo de documento:</label>
+                    <select name="tipo" class="form-select" required>
+                        <option value="cc">Cédula de ciudadanía</option>
+                        <option value="ti">Tarjeta de identidad</option>
+                        <option value="ce">Cédula de extranjería</option>
+                        <option value="pasaporte">Pasaporte</option>
+                        <option value="nit">NIT</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="documento" class="form-label">Documento</label>
+                    <input type="tel" pattern="[0-9]+" name="documento" class="form-control" placeholder="Escribe tu documento" required>
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" name="nombre" class="form-control" placeholder="Escribe tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico:</label>
+                    <input type="email" name="email" class="form-control" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="celular" class="form-label">Celular:</label>
+                    <input type="tel" name="celular" class="form-control" placeholder="1234567890" required>
+                </div>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección:</label>
+                    <input type="text" name="direccion" class="form-control" placeholder="ej: Calle 123 # 45 - 67" required>
+                </div>
+                <div class="mb-3">
+                    <label for="presentacion" class="form-label">Presentación:</label>
+                    <textarea name="presentacion" rows="4" class="form-control" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+                </form>
+            </section>
+            <footer class="mt-4 text-center text-muted">
+                <p>&copy; 2025 Darwin Morales. Todos los derechos reservados.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

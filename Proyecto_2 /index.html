@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/paletaColor.png" type="image/x-icon">
+    <title>Color RGB</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-interno">
+            <div class="color">
+                <label for="rojo"><b>Rojo (R)</b></label>
+                <input type="range" id="rojo" min="0" max="255" value="23">
+                <p id="texto-rojo"></p>
+            </div>
+            <div class="color">
+                <label for="verde"><b>Verde (G)</b></label>
+                <input type="range" id="verde" min="0" max="255" value="41">
+                <p id="texto-verde"></p>
+            </div>
+            <div class="color">
+                <label for="azul"><b>Azul (B)</b></label>
+                <input type="range" id="azul" min="0" max="255" value="56">
+                <p id="texto-azul"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

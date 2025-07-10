@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;       
+    margin: 0;
+    padding: 10px;
+    gap: 5px;
+    background: linear-gradient(45deg, rgb(255, 13, 231),rgb(155, 3, 205), rgb(98, 0, 255), rgb(3, 33, 205));
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+    width: 400px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.display input {
+  
+    width: 360px;   
+    margin-top: 10px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(212, 212, 212);
+    margin-left: 20px;
+    margin-right: 5px;
+    
+}
+
+.botones {
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.numero:hover {
+    background-color: rgb(224, 224, 224);
+    cursor: pointer
+}
+.botones button{
+    border-radius: 8px;
+    border: none;   
+}
+
+.operador {
+  background-color: rgb(95, 98, 248);
+}
+.operador:hover {
+    background-color: rgb(72, 75, 240);
+    cursor: pointer;
+}
+
+#clear{
+    background-color: rgb(252, 0, 0);
+
+}
+#clear:hover {
+    background-color: rgb(220, 5, 5);
+    cursor: pointer;
+}
+
+#eliminar { 
+   background-color: rgb(239, 70, 70);
+}
+#eliminar:hover {
+    background-color: rgb(251, 76, 76);
+    cursor: pointer;
+}
+
+#enter {
+    grid-column: span 2;
+    background-color: rgb(255, 93, 185);
+    border-radius: 8px;
+    border: none;
+}
+#enter:hover {
+    background-color: rgb(238, 73, 221);
+    cursor: pointer;
+}
